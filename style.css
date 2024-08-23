@@ -90,7 +90,7 @@ body {
 .video-wrapper {
     flex: 1 1 50%; /* Two videos per row */
     position: relative;
-    margin: 0;
+    margin: 0; /* Removed gaps between videos */
     padding: 0;
     box-sizing: border-box;
     height: 50vh; /* Consistent height for all videos */
