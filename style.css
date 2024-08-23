@@ -47,21 +47,6 @@ body {
     color: yellow;
 }
 
-.burger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 20px;
-}
-
-.burger div {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-}
-
 /* About Section Styling */
 .about-container {
     display: flex;
@@ -193,35 +178,6 @@ body {
     }
 }
 
-/* Home Page Video Container Styling */
-#video-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-top: 80px; /* Adjusted to accommodate the fixed navbar */
-    padding: 0;
-    width: 100vw;
-    overflow: hidden;
-}
-
-.video-wrapper {
-    flex: 1 1 calc(50% - 10px); /* Two videos per row, with no gaps */
-    position: relative;
-    margin: 0; /* Removed gaps between videos */
-    padding: 0;
-    box-sizing: border-box;
-    height: 50vh; /* Consistent height for all videos */
-    cursor: pointer; /* Make it clear that it's clickable */
-}
-
-.video-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    transition: filter 0.3s ease;
-}
-
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .nav-links {
@@ -241,16 +197,6 @@ body {
         top: 60px;
         right: 0;
         padding: 20px;
-    }
-
-    #video-container {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .video-wrapper {
-        flex: 1 1 100%; /* One video per row on mobile */
-        height: 50vh; /* Ensure videos cover half height on mobile */
     }
 
     .about-container {
@@ -281,4 +227,33 @@ body {
     .awards-list li, .press-list li {
         font-size: 16px;
     }
+}
+
+/* Home Page Video Container Styling */
+#video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px; /* Adjusted to accommodate the fixed navbar */
+    padding: 0;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.video-wrapper {
+    flex: 1 1 50%; /* Two videos per row */
+    position: relative;
+    margin: 0; /* Removed gaps between videos */
+    padding: 0;
+    box-sizing: border-box;
+    height: 50vh; /* Consistent height for all videos */
+    cursor: pointer; /* Make it clear that it's clickable */
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: filter 0.3s ease;
 }

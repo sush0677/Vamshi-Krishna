@@ -51,18 +51,6 @@ function createVideoWrapper(videoId, overlayText) {
 
     videoWrapper.appendChild(iframe);
     videoWrapper.appendChild(overlay);
-
-    // Add hover effect to show overlay and highlight video
-    videoWrapper.addEventListener('mouseover', () => {
-        overlay.style.opacity = '1'; // Show overlay on hover
-        iframe.style.filter = 'brightness(50%)'; // Dim the video for better text visibility
-    });
-
-    videoWrapper.addEventListener('mouseout', () => {
-        overlay.style.opacity = '0'; // Hide overlay when not hovering
-        iframe.style.filter = 'brightness(100%)'; // Reset video brightness
-    });
-
     return videoWrapper;
 }
 
