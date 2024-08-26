@@ -92,19 +92,20 @@ body {
 
 .video-row {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .video-wrapper {
     flex: 1 1 33%; /* Three videos per row */
     position: relative;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     height: 50vh; /* Consistent height for all videos */
     cursor: pointer;
     transition: filter 0.3s ease;
+    margin: 30px;
+    position: relative;
+    padding-bottom: 80px;
 }
 
 .video-wrapper video {
@@ -118,6 +119,30 @@ body {
     filter: brightness(50%);
 }
 
+/* Caption Styling */
+.video-caption {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: black; /* or use rgba(0, 0, 0, 0.8) for transparency */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.video-caption h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.video-caption p {
+    font-size: 14px;
+    margin: 0;
+    color: #ccc;
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -167,6 +192,11 @@ body {
     .video-wrapper {
         flex: 1 1 100%;
         height: 50vh;
+        margin: 10px 0;
+        padding-bottom: 100px;
+    }
+    .video-caption { /* Adjusted position */
+        width: calc(100% - 20px);/* Ensure it doesn't overflow */
     }
 }
 
