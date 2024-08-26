@@ -4,19 +4,19 @@ body {
     font-family: 'Arial', sans-serif;
     color: white;
     background-color: black;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 .name {
     font-weight: bold;
-    color: white; /* Or whatever color you want for the name */
+    color: white;
     font-size: 24px;
 }
 
 .role {
     font-weight: normal;
-    color: #aaa; /* Lighter color for the role */
-    font-size: 20px; /* Slightly smaller font size */
+    color: #aaa;
+    font-size: 20px;
 }
 
 /* Navbar Styling */
@@ -42,9 +42,9 @@ body {
 
 .nav-links {
     display: flex;
-    list-style: none; /* Remove bullet points */
+    list-style: none;
     gap: 20px;
-    margin-right: 20px; /* Adjust this to bring navbar inside */
+    margin-right: 20px;
 }
 
 .nav-links a {
@@ -52,7 +52,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
-    padding: 5px 10px; /* Added padding for better visibility */
+    padding: 5px 10px;
 }
 
 .nav-links a:hover {
@@ -74,54 +74,50 @@ body {
     background-color: white;
 }
 
-/* Burger Menu Animation */
-.burger.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 5px);
-}
-
-.burger.toggle .line2 {
-    opacity: 0;
-}
-
-.burger.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -5px);
-}
-
 /* Video Container Styling */
 #video-container {
+    margin-top: 100px; /* Adjusted for fixed navbar */
+}
+
+.section {
+    margin-bottom: 50px; /* Spacing between sections */
+}
+
+.section h2 {
+    text-align: center;
+    color: #ff6f61;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.video-row {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-top: 80px; /* Adjusted to accommodate the fixed navbar */
-    padding: 0;
-    width: 100vw;
-    overflow: hidden;
+    gap: 20px;
 }
 
 .video-wrapper {
-    flex: 1 1 50%; /* Two videos per row */
+    flex: 1 1 33%; /* Three videos per row */
     position: relative;
-    margin: 0; /* Removed gaps between videos */
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 50vh; /* Consistent height for all videos */
-    cursor: pointer; /* Make it clear that it's clickable */
-}
-
-.video-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
+    cursor: pointer;
     transition: filter 0.3s ease;
 }
 
-/* Highlight effect */
-.video-wrapper:hover iframe {
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Hover effect only for the center video */
+.video-wrapper.hover-effect:hover video {
     filter: brightness(50%);
 }
 
-/* Overlay Styling */
 .overlay {
     position: absolute;
     top: 0;
@@ -134,13 +130,44 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
-/* Show overlay on hover */
-.video-wrapper:hover .overlay {
+.video-wrapper.hover-effect:hover .overlay {
     opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        padding: 20px;
+    }
+
+    .video-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-wrapper {
+        flex: 1 1 100%;
+        height: 50vh;
+    }
 }
 
 /* Fade in animation for the entire about section */
@@ -266,7 +293,6 @@ body {
         opacity: 1;
     }
 }
-
 
 @keyframes fadeInText {
     from {
