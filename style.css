@@ -7,6 +7,18 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+.name {
+    font-weight: bold;
+    color: white; /* Or whatever color you want for the name */
+    font-size: 24px;
+}
+
+.role {
+    font-weight: normal;
+    color: #aaa; /* Lighter color for the role */
+    font-size: 20px; /* Slightly smaller font size */
+}
+
 /* Navbar Styling */
 .navbar {
     display: flex;
@@ -131,27 +143,41 @@ body {
     opacity: 1;
 }
 
-/* About Section Styling */
+/* Fade in animation for the entire about section */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade in to the about container */
 .about-container {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 100px 20px;
     margin: 0 auto;
     max-width: 1200px;
-    animation: fadeIn 1s ease-in-out; /* Fade in effect */
 }
 
+/* About Section Styling */
 .about-image img {
-    max-width: 600px; /* Increased maximum width for the image */
+    max-width: 600px;
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease; /* Zoom effect on hover */
+    transition: transform 0.3s ease;
 }
 
 .about-image img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);
 }
 
 .about-text {
@@ -163,7 +189,6 @@ body {
     font-size: 36px;
     margin-bottom: 10px;
     color: #ff6f61;
-    animation: slideIn 1s ease-out; /* Slide in effect */
 }
 
 .about-text h3 {
@@ -176,8 +201,6 @@ body {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 30px;
-    opacity: 0;
-    animation: fadeInText 2s forwards 1s; /* Delayed fade in effect */
 }
 
 .contact-info h4 {
@@ -204,7 +227,6 @@ body {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    animation: fadeIn 1s ease-in-out;
 }
 
 #awards h2, #press h2 {
@@ -244,14 +266,6 @@ body {
     }
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
 
 @keyframes fadeInText {
     from {
