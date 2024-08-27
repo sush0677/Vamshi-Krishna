@@ -1,18 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Handle Burger Menu Toggle
-    const burger = document.querySelector('.burger');
-    const navLinks = document.querySelector('.nav-links');
+function playVimeoVideo(videoId) {
+    const vimeoOverlay = document.getElementById('vimeo-overlay');
+    const vimeoPlayer = document.getElementById('vimeo-player');
 
-    burger.addEventListener('click', () => {
-        navLinks.classList.toggle('nav-active');
-        burger.classList.toggle('toggle');
-    });
-});
+    vimeoPlayer.src = `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+    vimeoOverlay.style.display = 'flex';
 
-/**
- * Navigate to the video page with the given Vimeo video ID.
- * @param {string} videoId - The Vimeo video ID.
- */
-function navigateToVideoPage(videoId) {
-    window.location.href = `video-page.html?videoId=${videoId}`;
+    // Trigger the animations
+    vimeoOverlay.style.animation = 'fadeIn 0.5s ease-out forwards';
+    const vimeoContainer = document.querySelector('.vimeo-container');
+    vimeoContainer.style.animation = 'scaleUp 0.5s ease-out forwards';
+}
+
+function closeVimeoVideo() {
+    const vimeoOverlay = document.getElementById('vimeo-overlay');
+    const vimeoPlayer = document.getElementById('vimeo-player');
+
+    vimeoPlayer.src = '';
+    vimeoOverlay.style.display = 'none';
 }
