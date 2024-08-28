@@ -259,39 +259,76 @@ body {
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
+        opacity: 0; /* Start hidden */
     }
-
+    
     .burger {
         display: flex;
     }
-
+    
     .nav-links.nav-active {
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 100%;
         background-color: #000;
-        position: fixed; /* Changed to fixed for better control */
-        top: 60px;
-        right: 0; /* Positioning it to the right */
-        height: 100vh; /* Full height for better visibility */
+        position: fixed;
+        top: 0; /* Cover the entire screen from the top */
+        left: 0; /* Cover the entire screen from the left */
+        height: 100vh; /* Full height */
         align-items: center; /* Center the links horizontally */
-        padding-top: 20px; /* Add some padding at the top */
-        z-index: 999; /* Ensure it's above other elements */
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Add a shadow for better separation */
+        justify-content: center; /* Center the links vertically */
+        padding-top: 20px;
+        z-index: 999;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        animation: fadeInBackground 0.5s ease forwards; /* Fade in background */
     }
-
+    
     .nav-links a {
-        margin: 15px 0; /* Space out the links */
-        font-size: 20px; /* Increase the font size for better visibility */
+        margin: 15px 0;
+        font-size: 40px; /* Slightly larger for full screen */
+        color: white;
+        text-decoration: none;
+        opacity: 0; /* Start hidden */
+        animation: fadeInLinks 1s ease forwards; /* Add fade-in animation */
     }
-
+    
+    .nav-links a:nth-child(1) {
+        animation-delay: 0.5s; /* Delay for the first link */
+    }
+    
+    .nav-links a:nth-child(2) {
+        animation-delay: 0.7s; /* Delay for the second link */
+    }
+    
+    /* Fade-in animation for the background */
+    @keyframes fadeInBackground {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    /* Fade-in animation for the links */
+    @keyframes fadeInLinks {
+        from {
+            opacity: 0;
+            transform: translateY(10px); /* Start slightly lower */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Move to the original position */
+        }
+    }
+    
     .burger {
         position: fixed; /* Fix the burger menu on top */
         top: 20px;
         right: 20px;
-        z-index: 1000; /* Ensure it's above the nav links */
+        z-index: 1000;
     }
-
+    
     .video-row {
         flex-direction: column;
         align-items: center;
@@ -376,25 +413,37 @@ body {
     margin-bottom: 30px;
 }
 
-.contact-info h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #ccc;
+#contact {
+    padding: 40px 20px;  /* Padding around the contact section */
+    background-color: rgb(0, 0, 0);  /* Dark background color for the contact section */
+    color: white;  /* Text color */
+    max-width: 1200px;  /* Set a max width for the content */
+    margin: 0 auto;  /* Center the section */
+    text-align: center;  /* Center the text */
+}
+
+#contact h2 {
+    font-size: 32px;  /* Font size for the contact heading */
+    margin-bottom: 20px;  /* Space below the heading */
+    color: #9f7419;  /* Custom color for the heading */
 }
 
 .contact-info p {
-    font-size: 16px;
-    margin: 5px 0;
+    font-size: 18px;  /* Font size for contact details */
+    margin: 10px 0;  /* Spacing between contact details */
+    color: #ccc;  /* Lighter color for text */
 }
 
 .contact-info a {
-    color: #ffffff;
-    text-decoration: none;
+    color: #ffffff;  /* Link color */
+    text-decoration: none;  /* Remove underline */
 }
 
 .contact-info a:hover {
-    text-decoration: underline;
+    color: #9f7419;  /* Hover color for links */
+    text-decoration: underline;  /* Underline on hover */
 }
+
 
 footer {
     text-align: center;
