@@ -256,7 +256,6 @@ body {
     opacity: 1;
 }
 
-/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -271,20 +270,47 @@ body {
         flex-direction: column;
         width: 60%;
         background-color: #000;
-        position: sticky;
+        position: fixed; /* Changed to fixed for better control */
         top: 60px;
-        right: 0;
+        right: 0; /* Positioning it to the right */
+        height: 100vh; /* Full height for better visibility */
+        align-items: center; /* Center the links horizontally */
+        padding-top: 20px; /* Add some padding at the top */
+        z-index: 999; /* Ensure it's above other elements */
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Add a shadow for better separation */
+    }
+
+    .nav-links a {
+        margin: 15px 0; /* Space out the links */
+        font-size: 20px; /* Increase the font size for better visibility */
+    }
+
+    .burger {
+        position: fixed; /* Fix the burger menu on top */
+        top: 20px;
+        right: 20px;
+        z-index: 1000; /* Ensure it's above the nav links */
     }
 
     .video-row {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
     .video-wrapper {
         flex: 1 1 100%;
+        position: relative;
+        box-sizing: border-box;
+        height: 50vh; /* Consistent height for all videos */
+        cursor: pointer;
+        margin: 0;
     }
     .video-caption { /* Adjusted position */
+        width: calc(100% - 20px);
+        left: 50%;/* Ensure it doesn't overflow */
+    }
+    .video-caption2 { /* Adjusted position */
         width: calc(100% - 20px);
         left: 50%;/* Ensure it doesn't overflow */
     }
