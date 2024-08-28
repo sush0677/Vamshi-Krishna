@@ -372,7 +372,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -471,7 +471,7 @@ footer {
 
 /* Awards and Press Section Styling */
 #awards, #press {
-    padding: 40px 20px;
+    padding: 15px 15px;
     max-width: 1200px;
     margin: 0 auto;
 }
