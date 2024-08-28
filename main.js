@@ -18,3 +18,9 @@ function closeVimeoVideo() {
     vimeoPlayer.src = '';
     vimeoOverlay.style.display = 'none';
 }
+
+// Navbar toggle for mobile
+document.querySelector('.burger').addEventListener('click', function() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('nav-active');
+});

@@ -127,7 +127,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: yellow;
+    color: #9f7419;
 }
 
 .burger {
@@ -163,7 +163,6 @@ body {
 .video-row {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
 }
 
 .video-wrapper {
@@ -173,9 +172,9 @@ body {
     height: 50vh; /* Consistent height for all videos */
     cursor: pointer;
     transition: filter 0.3s ease;
-    margin: 30px;
     position: relative;
-    padding-bottom: 80px;
+    margin: 20px;
+    padding-bottom: 100px;
 }
 
 .video-wrapper video {
@@ -192,44 +191,8 @@ body {
 /* Caption Styling */
 .video-caption {
     position: absolute;
-    left: 50%;
     transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    background-color: black; /* or use rgba(0, 0, 0, 0.8) for transparency */
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.video-caption2 {
-    position: absolute;
-    top: 285px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    background-color: black; /* or use rgba(0, 0, 0, 0.8) for transparency */
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.video-caption3 {
-    position: absolute;
-    top: 250px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    background-color: black; /* or use rgba(0, 0, 0, 0.8) for transparency */
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.video-caption4 {
-    position: absolute;
-    top: 255px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 60%;
     text-align: center;
     color: white;
     background-color: black; /* or use rgba(0, 0, 0, 0.8) for transparency */
@@ -249,6 +212,18 @@ body {
     color: #ccc;
 }
 
+.video-caption2 {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 20px;
+    right: 60%;
+    text-align: center;
+    color: white;
+    background-color: black; /* or use rgba(0, 0, 0, 0.8) for transparency */
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .video-caption2 h3 {
     font-size: 18px;
     font-weight: bold;
@@ -261,29 +236,6 @@ body {
     color: #ccc;
 }
 
-.video-caption3 h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 5px 0;
-}
-
-.video-caption3 p {
-    font-size: 14px;
-    margin: 0;
-    color: #ccc;
-}
-
-.video-caption4 h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 5px 0;
-}
-
-.video-caption4 p {
-    font-size: 14px;
-    margin: 0;
-    color: #ccc;
-}
 .overlay {
     position: absolute;
     top: 0;
@@ -332,12 +284,10 @@ body {
 
     .video-wrapper {
         flex: 1 1 33%;
-        height: 50vh;
-        margin: 10px 0;
-        padding-bottom: 100px;
     }
     .video-caption { /* Adjusted position */
-        width: calc(100% - 20px);/* Ensure it doesn't overflow */
+        width: calc(100% - 20px);
+        left: 50%;/* Ensure it doesn't overflow */
     }
 }
 
@@ -386,7 +336,7 @@ body {
 .about-text h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: #ff6f61;
+    color: #9f7419;
 }
 
 .about-text h3 {
@@ -421,6 +371,30 @@ body {
     text-decoration: underline;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #9f7419; /* Add a hover effect color */
+}
+
+
 /* Awards and Press Section Styling */
 #awards, #press {
     padding: 40px 20px;
@@ -431,7 +405,7 @@ body {
 #awards h2, #press h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #ff6f61;
+    color: #9f7419;
 }
 
 .awards-list, .press-list {
