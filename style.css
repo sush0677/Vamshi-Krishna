@@ -269,12 +269,11 @@ body {
     .nav-links.nav-active {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 60%;
         background-color: #000;
-        position: absolute;
+        position: sticky;
         top: 60px;
         right: 0;
-        padding: 20px;
     }
 
     .video-row {
@@ -283,7 +282,7 @@ body {
     }
 
     .video-wrapper {
-        flex: 1 1 33%;
+        flex: 1 1 100%;
     }
     .video-caption { /* Adjusted position */
         width: calc(100% - 20px);
