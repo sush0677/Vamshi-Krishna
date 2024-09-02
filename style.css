@@ -420,6 +420,7 @@ body {
     max-width: 1200px;  /* Set a max width for the content */
     margin: 0 auto;  /* Center the section */
     text-align: center;  /* Center the text */
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 #contact h2 {
@@ -474,6 +475,7 @@ footer {
     padding: 15px 15px;
     max-width: 1200px;
     margin: 0 auto;
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 #awards h2, #press h2 {
