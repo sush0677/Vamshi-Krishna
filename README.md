@@ -1,7 +1,3 @@
-To add Vamshi Krishna's website, LinkedIn, and Vimeo account with their corresponding symbols (icons), here’s an updated version of the description. This will include links and symbols for the website, LinkedIn, and Vimeo.
-
----
-
 ### Filmmaker Website for Vamshi Krishna
 
 ## Project Description
