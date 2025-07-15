@@ -7,16 +7,21 @@ body {
     overflow-x: hidden;
 }
 
+/* Center all headings */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
 .name {
     font-weight: bold;
     color: white;
-    font-size: 24px;
+    font-size: clamp(18px, 4vw, 24px); /* Responsive font size */
 }
 
 .role {
     font-weight: normal;
     color: #aaa;
-    font-size: 20px;
+    font-size: clamp(16px, 3.5vw, 20px); /* Responsive font size */
 }
 
 /* Vimeo Video Overlay */
@@ -37,7 +42,7 @@ body {
 
 .vimeo-container {
     position: relative;
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     transform: scale(0.8); /* Start with the video scaled down */
     animation: scaleUp 0.5s ease-out forwards;
@@ -91,7 +96,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: clamp(15px, 3vw, 20px);
     background-color: #000;
     position: fixed;
     width: 100%;
@@ -103,7 +108,7 @@ body {
 
 .logo a {
     color: white;
-    font-size: 24px;
+    font-size: clamp(18px, 4vw, 24px);
     text-decoration: none;
     font-weight: bold;
     font-family: 'Arial', sans-serif; /* Set the font to Arial */
@@ -112,15 +117,15 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
-    margin-right: 20px;
+    gap: clamp(15px, 3vw, 20px);
+    margin-right: clamp(15px, 3vw, 20px);
     font-family: 'Arial', sans-serif; /* Set the font to Arial */
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: clamp(14px, 3vw, 18px);
     transition: color 0.3s ease;
     padding: 5px 10px;
     font-family: 'Arial', sans-serif; /* Set the font to Arial */
@@ -147,40 +152,49 @@ body {
 
 /* Video Container Styling */
 #video-container {
-    margin-top: 100px; /* Adjusted for fixed navbar */
+    margin-top: clamp(80px, 12vw, 100px); /* Responsive top margin */
+    padding: 0 clamp(10px, 3vw, 20px); /* Responsive padding */
 }
 
 .section {
-    margin-bottom: 50px; /* Spacing between sections */
+    margin-bottom: clamp(30px, 6vw, 50px); /* Responsive spacing */
 }
 
 .section h2 {
     text-align: center;
     color: #9f7419;
-    font-size: 36px;
+    font-size: clamp(24px, 5vw, 36px); /* Responsive font size */
+    margin-bottom: clamp(20px, 4vw, 30px);
+}
+
+/* Center all headings */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
 }
 
 .video-row {
     display: flex;
     justify-content: space-between;
+    gap: clamp(10px, 2vw, 20px);
 }
 
 .video-wrapper {
     flex: 1 1 33%; /* Three videos per row */
     position: relative;
     box-sizing: border-box;
-    height: 50vh; /* Consistent height for all videos */
+    height: clamp(300px, 50vh, 400px); /* Responsive height */
     cursor: pointer;
     transition: filter 0.3s ease;
     position: relative;
-    margin: 20px;
-    padding-bottom: 100px;
+    margin: clamp(10px, 2vw, 20px);
+    padding-bottom: clamp(60px, 12vw, 100px);
 }
 
 .video-wrapper video {
     width: 100%;
     height: 100%;
     border: none;
+    object-fit: cover; /* Ensure videos cover the container properly */
 }
 
 /* Hover effect only for the center video */
@@ -188,50 +202,55 @@ body {
     filter: brightness(50%);
 }
 
-/* Caption Styling */
+/* Caption Styling - Fixed positioning */
 .video-caption {
     position: absolute;
-    transform: translateX(-50%);
-    right: 60%;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
     color: white;
-    background-color: black; /* or use rgba(0, 0, 0, 0.8) for transparency */
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: clamp(10px, 2vw, 15px);
     box-sizing: border-box;
+    width: 100%;
 }
 
 .video-caption h3 {
-    font-size: 18px;
+    font-size: clamp(14px, 3vw, 18px);
     font-weight: bold;
     margin: 5px 0;
+    text-align: center;
 }
 
 .video-caption p {
-    font-size: 14px;
+    font-size: clamp(12px, 2.5vw, 14px);
     margin: 0;
     color: #ccc;
 }
 
 .video-caption2 {
     position: absolute;
-    transform: translateX(-50%);
-    bottom: 20px;
-    right: 60%;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
     color: white;
-    background-color: black; /* or use rgba(0, 0, 0, 0.8) for transparency */
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: clamp(10px, 2vw, 15px);
     box-sizing: border-box;
+    width: 100%;
 }
 
 .video-caption2 h3 {
-    font-size: 18px;
+    font-size: clamp(14px, 3vw, 18px);
     font-weight: bold;
     margin: 5px 0;
+    text-align: center;
 }
 
 .video-caption2 p {
-    font-size: 14px;
+    font-size: clamp(12px, 2.5vw, 14px);
     margin: 0;
     color: #ccc;
 }
@@ -247,7 +266,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: clamp(20px, 4vw, 30px);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -256,6 +275,41 @@ body {
     opacity: 1;
 }
 
+/* Tablet Breakpoint (768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .video-row {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .video-wrapper {
+        flex: 1 1 calc(50% - 15px); /* Two videos per row on tablets */
+        height: clamp(250px, 40vh, 350px);
+    }
+    
+    .about-container {
+        padding: 30px 15px;
+        gap: 30px;
+    }
+    
+    .about-text {
+        margin-left: 20px;
+    }
+    
+    .about-text h1 {
+        font-size: clamp(28px, 4vw, 36px);
+    }
+    
+    .about-text h3 {
+        font-size: clamp(20px, 3vw, 24px);
+    }
+    
+    .about-text p {
+        font-size: clamp(16px, 2.5vw, 18px);
+    }
+}
+
+/* Mobile Breakpoint (768px and below) */
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -285,7 +339,7 @@ body {
     
     .nav-links a {
         margin: 15px 0;
-        font-size: 40px; /* Slightly larger for full screen */
+        font-size: clamp(24px, 6vw, 40px); /* Responsive font size */
         color: white;
         text-decoration: none;
         opacity: 0; /* Start hidden */
@@ -332,24 +386,82 @@ body {
     .video-row {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: clamp(15px, 3vw, 20px);
     }
 
     .video-wrapper {
         flex: 1 1 100%;
         position: relative;
         box-sizing: border-box;
-        height: 50vh; /* Consistent height for all videos */
+        height: clamp(250px, 45vh, 350px); /* Better mobile height */
         cursor: pointer;
         margin: 0;
+        padding-bottom: clamp(80px, 15vw, 120px); /* More space for captions */
     }
-    .video-caption { /* Adjusted position */
-        width: calc(100% - 20px);
-        left: 50%;/* Ensure it doesn't overflow */
+    
+    .video-caption, .video-caption2 {
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: clamp(12px, 3vw, 18px);
     }
-    .video-caption2 { /* Adjusted position */
-        width: calc(100% - 20px);
-        left: 50%;/* Ensure it doesn't overflow */
+    
+    .vimeo-container {
+        width: 95%;
+    }
+    
+    .vimeo-container iframe {
+        height: 250px; /* Smaller height for mobile */
+    }
+    
+    .close-video {
+        top: -30px;
+        right: -30px;
+        font-size: 30px;
+    }
+}
+
+/* Small Mobile Breakpoint (480px and below) */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .logo a {
+        font-size: 16px;
+    }
+    
+    .role {
+        font-size: 14px;
+    }
+    
+    .video-wrapper {
+        height: clamp(200px, 40vh, 280px);
+        padding-bottom: clamp(70px, 12vw, 100px);
+    }
+    
+    .video-caption h3, .video-caption2 h3 {
+        font-size: 14px;
+    }
+    
+    .video-caption p, .video-caption2 p {
+        font-size: 12px;
+    }
+    
+    .section h2 {
+        font-size: 20px;
+    }
+    
+    .about-text h1 {
+        font-size: 24px;
+    }
+    
+    .about-text h3 {
+        font-size: 18px;
+    }
+    
+    .about-text p {
+        font-size: 16px;
     }
 }
 
@@ -372,9 +484,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
+    padding: clamp(30px, 6vw, 50px) clamp(15px, 3vw, 20px);
     margin: 0 auto;
     max-width: 1200px;
+    gap: clamp(20px, 4vw, 40px);
 }
 
 /* About Section Styling */
@@ -392,29 +505,31 @@ body {
 
 .about-text {
     max-width: 600px;
-    margin-left: 40px;
+    margin-left: clamp(20px, 4vw, 40px);
 }
 
 .about-text h1 {
-    font-size: 36px;
+    font-size: clamp(24px, 5vw, 36px);
     margin-bottom: 10px;
     color: #9f7419;
+    text-align: center;
 }
 
 .about-text h3 {
-    font-size: 24px;
+    font-size: clamp(18px, 4vw, 24px);
     margin-bottom: 20px;
     color: #ccc;
+    text-align: center;
 }
 
 .about-text p {
-    font-size: 18px;
+    font-size: clamp(16px, 3vw, 18px);
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
 #contact {
-    padding: 40px 20px;  /* Padding around the contact section */
+    padding: clamp(30px, 6vw, 40px) clamp(15px, 3vw, 20px);  /* Responsive padding */
     background-color: rgb(0, 0, 0);  /* Dark background color for the contact section */
     color: white;  /* Text color */
     max-width: 1200px;  /* Set a max width for the content */
@@ -424,13 +539,14 @@ body {
 }
 
 #contact h2 {
-    font-size: 32px;  /* Font size for the contact heading */
+    font-size: clamp(24px, 5vw, 32px);  /* Responsive font size */
     margin-bottom: 20px;  /* Space below the heading */
     color: #9f7419;  /* Custom color for the heading */
+    text-align: center;
 }
 
 .contact-info p {
-    font-size: 18px;  /* Font size for contact details */
+    font-size: clamp(16px, 3vw, 18px);  /* Responsive font size */
     margin: 10px 0;  /* Spacing between contact details */
     color: #ccc;  /* Lighter color for text */
 }
@@ -472,16 +588,17 @@ footer {
 
 /* Awards and Press Section Styling */
 #awards, #press {
-    padding: 15px 15px;
+    padding: clamp(15px, 3vw, 25px);
     max-width: 1200px;
     margin: 0 auto;
     animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 #awards h2, #press h2 {
-    font-size: 32px;
+    font-size: clamp(24px, 5vw, 32px);
     margin-bottom: 20px;
     color: #9f7419;
+    text-align: center;
 }
 
 .awards-list, .press-list {
@@ -491,7 +608,7 @@ footer {
 }
 
 .awards-list li, .press-list li {
-    font-size: 18px;
+    font-size: clamp(16px, 3vw, 18px);
     margin-bottom: 15px;
     line-height: 1.6;
 }
