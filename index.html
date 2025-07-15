@@ -1,342 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Home - Vamshi Krishna</title>
- <link rel="stylesheet" href="style.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamshi Krishna - Director</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <nav class="navbar">
- <div class="logo">
- <a href="index.html"><span class="name">VAMSHI KRISHNA</span> <span class="role">Director</span></a>
- </div>
-        
- <ul class="nav-links">
- <li><a href="index.html"><strong>Work</strong></a></li>
- <li><a href="about.html"><strong>About</strong></a></li>
- </ul>
- <div class="burger">
- <div class="line1"></div>
- <div class="line2"></div>
- <div class="line3"></div>
- </div>
- </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <span class="name">VAMSHI KRISHNA</span>
+                <span class="role">Director</span>
+            </a>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Work</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+        
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
 
- <header id="hero">
- <div id="video-container">
-            <!-- Commercials Section -->
- <div class="section">
- <h2 class="section-title">COMMERCIALS</h2>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('809745902')">
- <video src="boomer2.2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('809745902')">
- <video src="boomer2.3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('809745902')">
- <video src="boomer2.1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption2">
-    <h3>BOOMER 11 | TAROT READER</h3>
-    <p>Commercial, 42sec. A man meets a tarot reader to know his fate.</p>
-    </div>
- </div>
- </div>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('810177972')">
- <video src="boomer1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('810177972')">
- <video src="boomf.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('810177972')">
- <video src="boomer2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption">
-    <h3>BOOMER11 | PALM READER</h3>
-    <p>Commercial, 48 sec. A palm reader left in an awakening from a man's question.</p>
-    </div>
- </div>
- </div>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('933588683')">
- <video src="F3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('933588683')">
- <video src="F2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('933588683')">
- <video src="F1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption2">
-    <h3>FLORA | THE MIST</h3>
-    <p>Commercial, 56 sec. The Unparalleled breathtaking scenery of Flora Misty Falls.</p>
-    </div>
- </div>
- </div>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('809744558')">
- <video src="AA1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('809744558')">
- <video src="AA3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('809744558')">
- <video src="AA2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
-          <div class="video-caption">
-    <h3>AL AHLI CLUB, DUBAI | BUILDING PASSION</h3>
-    <p>Commercial, 91 sec. Determination breaks all barriers.</p>
-    </div>
- </div>
- </div>
- 
- <!-- Omega Film Commercial -->
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('1097169819')">
- <video src="Left.MOV" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('1097169819')">
- <video src="Center.mov" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('1097169819')">
- <video src="Right.MOV" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption2">
-    <h3>OMEGA FILM</h3>
-    <p>Commercial, 27sec. An AI spec ad film.</p>
-    </div>
- </div>
- </div>
- </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Video Background Slideshow -->
+        <div class="hero-video-background">
+            <video class="hero-video active" src="boomer1.mp4" muted autoplay loop playsinline></video>
+            <video class="hero-video" src="F1.mp4" muted autoplay loop playsinline></video>
+            <video class="hero-video" src="AA1.mp4" muted autoplay loop playsinline></video>
+            <video class="hero-video" src="HD1.mp4" muted autoplay loop playsinline></video>
+            <video class="hero-video" src="S1.mp4" muted autoplay loop playsinline></video>
+        </div>
+        
+        <!-- Dark overlay for text readability -->
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Where Vision Meets Reality</h1>
+            <p class="hero-subtitle">Transforming narratives into compelling visual experiences through the lens of cinematic storytelling</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Awards</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1+</span>
+                    <span class="stat-label">Years</span>
+                </div>
+            </div>
+            <a href="#video-container" class="btn-primary">View Portfolio</a>
+        </div>
+    </section>
 
-            <!-- Repeat similar structure for other sections -->
- <div class="section">
- <h2 class="section-title">FILMS</h2>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('807264466')">
- <video src="HD2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('807264466')">
- <video src="HD1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('807264466')">
- <video src="HD3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption">
-    <h3>HAVEN DUST</h3>
-    <p>Film, 16 min. A young man poses a huge threat to his mental health when resorting to a large intake of substance abuse.</p>
-    </div>
- </div>
- </div>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('753857953')">
- <video src="S1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('753857953')">
- <video src="S3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('753857953')">
- <video src="S2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption2">
-    <h3>SUKHA</h3>
-    <p>Film, 3 min. Evolution of Kamasutra over the years to modern-day polyamory relationships.</p>
-    </div>
- </div>
- </div>
- </div>
+    <!-- Main Content -->
+    <main>
+        <div id="video-container">
+            <!-- Commercials Section -->
+            <section class="section">
+                <h2 class="section-title">Commercials</h2>
+                <div class="video-grid">
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('809745902')">
+                            <video src="boomer2.2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('809745902')">
+                            <video src="boomer2.3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('809745902')">
+                            <video src="boomer2.1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>BOOMER 11 | TAROT READER</h3>
+                        <p>Commercial, 42sec. A man meets a tarot reader to know his fate.</p>
+                    </div>
+                    
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('810177972')">
+                            <video src="boomer1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('810177972')">
+                            <video src="boomf.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('810177972')">
+                            <video src="boomer2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>BOOMER11 | PALM READER</h3>
+                        <p>Commercial, 48 sec. A palm reader left in an awakening from a man's question.</p>
+                    </div>
+                    
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('933588683')">
+                            <video src="F3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('933588683')">
+                            <video src="F2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('933588683')">
+                            <video src="F1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>FLORA | THE MIST</h3>
+                        <p>Commercial, 56 sec. The Unparalleled breathtaking scenery of Flora Misty Falls.</p>
+                    </div>
+                    
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('809744558')">
+                            <video src="AA1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('809744558')">
+                            <video src="AA3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('809744558')">
+                            <video src="AA2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>AL AHLI CLUB, DUBAI | BUILDING PASSION</h3>
+                        <p>Commercial, 91 sec. Determination breaks all barriers.</p>
+                    </div>
+                    
+                    <!-- Omega Film Commercial -->
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('1097169819')">
+                            <video src="Left.MOV" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('1097169819')">
+                            <video src="Center.mov" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('1097169819')">
+                            <video src="Right.MOV" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>OMEGA FILM</h3>
+                        <p>Commercial, 27sec. An AI spec ad film.</p>
+                    </div>
+                </div>
+            </section>
 
- <div class="section">
- <h2 class="section-title">DIRECTOR'S ASSISTANT</h2>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('990638560')">
- <video src="IKEA1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990638560')">
- <video src="IKEA2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990638560')">
- <video src="IKEA3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption">
-    <h3>IKEA | A LITTLE BIT OF IKEA MAKES YOUR ROOM FEEL NEW</h3>
-    <p>Director's Assistant, 30 sec.</p>
-    </div>
- </div>
- </div>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('990640098')">
- <video src="IKEA1.1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990640098')">
- <video src="IKEA1.2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990640098')">
- <video src="IKEA1.3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption">
-    <h3>IKEA | A LITTLE BIT OF IKEA MAKES YOUR ROOM FEEL NEW</h3>
-    <p>Director's Assistant, 30 sec.</p>
-    </div>
- </div>
- </div>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('990644417')">
- <video src="Ao3.1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990644417')">
- <video src="Ao3.3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990644417')">
- <video src="Ao3.2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption">
-    <h3>AMAZON | HAR PAL FASHIONABLE</h3>
-    <p>Director's Assistant, 38 sec.</p>
-    </div>
- </div>
- </div>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('990651067')">
- <video src="Ao1.1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990651067')">
- <video src="Ao1.3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990651067')">
- <video src="Ao1.2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption">
-    <h3>AMAZON | HAR PAL FASHIONABLE</h3>
-    <p>Director's Assistant, 15 sec.</p>
-    </div>
- </div>
- </div>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('990646121')">
- <video src="Ao2.3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990646121')">
- <video src="Ao2.1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990646121')">
- <video src="Ao2.2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption">
-    <h3>AMAZON | HAR PAL FASHIONABLE</h3>
-    <p>Director's Assistant, 15 sec.</p>
-    </div>
- </div>
- </div>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('990642971')">
- <video src="M2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990642971')">
- <video src="M1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990642971')">
- <video src="M3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption">
-    <h3>MAHINDRA | HAPPY WOMEN'S DAY 2024</h3>
-    <p>Director's Assistant, 50 sec.</p>
-    </div>
- </div>
- </div>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('990635935')">
- <video src="ICA2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990635935')">
- <video src="ICA1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990635935')">
- <video src="ICA3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption">
-    <h3>ICA ITALIAN WOOD FINISHES | GOOD TASTE SHOWS</h3>
-    <p>Director's Assistant, 56 sec.</p>
-    </div>
- </div>
- </div>
- </div>
- <div class="section">
- <h2 class="section-title">ASSISTANT CINEMATOGRAPHER</h2>
- <div class="video-row">
- <div class="video-wrapper" onclick="playVimeoVideo('990631306')">
- <video src="i3.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 1</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990631306')">
- <video src="i2.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 2</div>
- </div>
- <div class="video-wrapper" onclick="playVimeoVideo('990631306')">
- <video src="i1.mp4" loop muted autoplay playsinline></video>
- <div class="overlay">Video 3</div>
- <div class="video-caption">
-    <h3>IBIS | VIBE IS AT IBIS</h3>
-    <p>Assistant Cinematographer, 60 sec.</p>
-    </div>
- </div>
- </div>
- </div>
+            <!-- Films Section -->
+            <section class="section">
+                <h2 class="section-title">Films</h2>
+                <div class="video-grid">
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('807264466')">
+                            <video src="HD2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('807264466')">
+                            <video src="HD1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('807264466')">
+                            <video src="HD3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>HAVEN DUST</h3>
+                        <p>Film, 16 min. A young man poses a huge threat to his mental health when resorting to a large intake of substance abuse.</p>
+                    </div>
+                    
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('753857953')">
+                            <video src="S1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('753857953')">
+                            <video src="S3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('753857953')">
+                            <video src="S2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>SUKHA</h3>
+                        <p>Film, 3 min. Evolution of Kamasutra over the years to modern-day polyamory relationships.</p>
+                    </div>
+                </div>
+            </section>
 
-          
- <div id="vimeo-overlay" class="vimeo-overlay">
-    <div class="vimeo-container">
-        <button class="close-video" onclick="closeVimeoVideo()">×</button>
-        <iframe id="vimeo-player" src="" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
-</div>  
- </div>
- </header>
+            <!-- Director's Assistant Section -->
+            <section class="section">
+                <h2 class="section-title">Director's Assistant</h2>
+                <div class="video-grid">
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('990638560')">
+                            <video src="IKEA1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990638560')">
+                            <video src="IKEA2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990638560')">
+                            <video src="IKEA3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>IKEA | A LITTLE BIT OF IKEA MAKES YOUR ROOM FEEL NEW</h3>
+                        <p>Director's Assistant, 30 sec.</p>
+                    </div>
+                    
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('990640098')">
+                            <video src="IKEA1.1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990640098')">
+                            <video src="IKEA1.2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990640098')">
+                            <video src="IKEA1.3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>IKEA | A LITTLE BIT OF IKEA MAKES YOUR ROOM FEEL NEW</h3>
+                        <p>Director's Assistant, 30 sec.</p>
+                    </div>
+                    
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('990644417')">
+                            <video src="Ao3.1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990644417')">
+                            <video src="Ao3.3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990644417')">
+                            <video src="Ao3.2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>AMAZON | HAR PAL FASHIONABLE</h3>
+                        <p>Director's Assistant, 38 sec.</p>
+                    </div>
+                    
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('990651067')">
+                            <video src="Ao1.1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990651067')">
+                            <video src="Ao1.3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990651067')">
+                            <video src="Ao1.2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>AMAZON | HAR PAL FASHIONABLE</h3>
+                        <p>Director's Assistant, 15 sec.</p>
+                    </div>
+                    
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('990646121')">
+                            <video src="Ao2.3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990646121')">
+                            <video src="Ao2.1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990646121')">
+                            <video src="Ao2.2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>AMAZON | HAR PAL FASHIONABLE</h3>
+                        <p>Director's Assistant, 15 sec.</p>
+                    </div>
+                    
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('990642971')">
+                            <video src="M2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990642971')">
+                            <video src="M1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990642971')">
+                            <video src="M3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>MAHINDRA | HAPPY WOMEN'S DAY 2024</h3>
+                        <p>Director's Assistant, 50 sec.</p>
+                    </div>
+                    
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('990635935')">
+                            <video src="ICA2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990635935')">
+                            <video src="ICA1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990635935')">
+                            <video src="ICA3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>ICA ITALIAN WOOD FINISHES | GOOD TASTE SHOWS</h3>
+                        <p>Director's Assistant, 56 sec.</p>
+                    </div>
+                </div>
+            </section>
 
- <footer>
-    <p>&copy; 2024 Vamshi Krishna. All rights reserved.</p>
-    <div class="social-links">
-        <a href="https://www.instagram.com/iamvamshix/?hl=en" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://vimeo.com/vamshikrishna" target="_blank">
-            <i class="fab fa-vimeo"></i>
-        </a>
-    </div>
-</footer>
+            <!-- Assistant Cinematographer Section -->
+            <section class="section">
+                <h2 class="section-title">Assistant Cinematographer</h2>
+                <div class="video-grid">
+                    <div class="video-row">
+                        <div class="video-wrapper" onclick="playVimeoVideo('990631306')">
+                            <video src="i3.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990631306')">
+                            <video src="i2.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="video-wrapper" onclick="playVimeoVideo('990631306')">
+                            <video src="i1.mp4" loop muted autoplay playsinline></video>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="row-caption">
+                        <h3>IBIS | VIBE IS AT IBIS</h3>
+                        <p>Assistant Cinematographer, 60 sec.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
- <script src="main.js"></script>
+    <!-- Video Player Overlay -->
+    <div id="vimeo-overlay" class="vimeo-overlay">
+        <div class="vimeo-container">
+            <button class="close-video" onclick="closeVimeoVideo()" aria-label="Close video">
+                <i class="fas fa-times"></i>
+            </button>
+            <iframe id="vimeo-player" src="" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Vamshi Krishna. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/iamvamshix/?hl=en" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://vimeo.com/vamshikrishna" target="_blank" aria-label="Vimeo">
+                    <i class="fab fa-vimeo"></i>
+                </a>
+            </div>
+            <div class="developer-credit">
+                <p>Made by <a href="https://github.com/sush0677" target="_blank">Sushant</a> | 
+                <a href="https://www.linkedin.com/in/sushant-p-a105a9240/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
