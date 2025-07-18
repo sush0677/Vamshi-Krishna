@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     padding: 1rem 2rem;
     background-color: rgba(0, 0, 0, 0.95);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     position: fixed;
     width: 100%;
@@ -1106,9 +1107,6 @@ main {
     transition: all 0.3s ease;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    /* Optimize video loading */
-    preload: metadata;
-    loading: lazy;
 }
 
 /* ===== ACCESSIBILITY ===== */

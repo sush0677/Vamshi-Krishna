@@ -10,11 +10,28 @@ This project involved designing and developing a dynamic website for **Vamshi Kr
 - **Performance Optimization**: Ensured fast loading times by optimizing images, code, and media assets.
 - **Integration of Video Content**: Embedded Vamshi’s film and commercial work using media players, enabling users to view his work directly from the website.
 
+## Project Structure
+```
+Vamshi-Krishna/
+├── index.html          # Main portfolio page
+├── about.html          # About page
+├── css/
+│   └── style.css       # Main stylesheet
+├── js/
+│   └── main.js         # JavaScript functionality
+├── videos/             # All video assets
+├── images/             # Image assets
+├── .htaccess           # Apache URL rewriting
+├── web.config          # IIS URL rewriting
+└── README.md           # Project documentation
+```
+
 ## Technologies Used
 - **HTML5, CSS3** for front-end design and layout.
 - **JavaScript** for interactive features and smooth navigation.
 - **Responsive Web Design** for compatibility across multiple devices.
 - **Canva** for design elements.
+- **Apache/IIS** URL rewriting for clean URLs.
 
 ## Links
 - [🌐 Website](https://vamshikrishnafilms.com/)  
