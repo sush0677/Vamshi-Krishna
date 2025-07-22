@@ -397,6 +397,23 @@ main {
     z-index: 2000;
     opacity: 0;
     animation: fadeIn 0.5s ease-out forwards;
+    cursor: pointer;
+}
+
+/* Mobile indicator for tap to close */
+@media (max-width: 768px) {
+    .vimeo-overlay::before {
+        content: "Tap outside to close";
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.875rem;
+        font-weight: 400;
+        pointer-events: none;
+        z-index: 2001;
+    }
 }
 
 .vimeo-container {
@@ -405,6 +422,7 @@ main {
     max-width: 1000px;
     transform: scale(0.8);
     animation: scaleUp 0.5s ease-out forwards;
+    cursor: default;
 }
 
 .vimeo-container iframe {
@@ -437,6 +455,20 @@ main {
 .close-video:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
+}
+
+/* Mobile touch improvements */
+@media (hover: none) and (pointer: coarse) {
+    .close-video {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 8px;
+    }
+    
+    .close-video:active {
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(0.95);
+    }
 }
 
 /* ===== ABOUT PAGE SECTIONS ===== */
@@ -967,11 +999,13 @@ main {
     }
     
     .close-video {
-        top: -40px;
-        right: -40px;
-        width: 35px;
-        height: 35px;
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
         font-size: 1.25rem;
+        background: rgba(0, 0, 0, 0.9);
+        border: 2px solid rgba(255, 255, 255, 0.3);
     }
     
     .vimeo-container iframe {
@@ -1080,6 +1114,19 @@ main {
     
     .contact-item a {
         font-size: 0.875rem;
+    }
+    
+    /* Ensure close button is always visible on small mobile */
+    .close-video {
+        top: 5px;
+        right: 5px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+        background: rgba(0, 0, 0, 0.95);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        z-index: 2002;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     }
 }
 

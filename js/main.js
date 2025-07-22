@@ -126,6 +126,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
+        // Mobile tap outside to close video
+        const vimeoOverlay = document.getElementById('vimeo-overlay');
+        if (vimeoOverlay) {
+            vimeoOverlay.addEventListener('click', function(e) {
+                try {
+                    // Close if clicking on the overlay background (not the video container)
+                    if (e.target === vimeoOverlay) {
+                        closeVimeoVideo();
+                    }
+                } catch (error) {
+                    console.error('Error handling overlay click:', error);
+                }
+            });
+        }
+        
         // Handle navigation links for clean URLs
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
